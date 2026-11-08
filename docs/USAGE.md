@@ -59,3 +59,7 @@ After confirming the reviewed file selection, the app moves to a dedicated progr
 - Elapsed time, the current file's full path and transfer bytes, the destination, live copied/skipped/issue counts, and a Stop Backup button.
 
 Copying uses chunks and preserves file metadata. Completed copies are still SHA-256 verified and renamed into place only after verification. The supplied app icon is bundled for Finder and explicitly loaded for the Dock at launch. Restart the rebuilt app to load the updated icon and progress page.
+
+## Finder icon
+
+The build validates the bundled icon and refreshes the app's local Finder registration so a previously cached generic icon is replaced. CI checks the icon without registering the build on the runner. If Finder still displays a cached icon, leave and reopen the build folder, or run `xcrun swift scripts/register-app.swift "build/Auto Backup.app"` from the repository root. This refresh affects this app only.

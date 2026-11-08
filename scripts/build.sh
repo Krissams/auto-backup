@@ -23,4 +23,5 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 </dict></plist>
 PLIST
 codesign --force --sign - "$APP"
+xcrun swift scripts/register-app.swift "$APP"
 echo "Built $APP"

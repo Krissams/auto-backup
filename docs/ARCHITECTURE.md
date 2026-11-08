@@ -28,6 +28,7 @@ flowchart LR
 | `Sources/BackupProgress.swift` | Structured telemetry, monotonic timing, weighted progress, transfer speed, and time estimates. |
 | `Sources/BackupProgressView.swift` | Third-page progress ring, speed graph, current file, counters, and final result. |
 | `scripts/prepare-branding.swift` | Packages the source logo into UI and Finder/Dock icon resources. |
+| `scripts/register-app.swift` | Validates the packaged icon and refreshes this app’s local Finder registration after building. CI validates without registering. |
 | `scripts/render-previews.swift` | Renders screenshots from synthetic examples without scanning or backing up user files. |
 
 ## Two kinds of matching
