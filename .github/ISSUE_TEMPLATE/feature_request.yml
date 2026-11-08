@@ -1,0 +1,25 @@
+name: Feature idea
+description: Suggest an improvement, large or small.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What backup problem would this solve?
+      description: Explain your workflow and who would benefit.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+      description: Describe the result you want and alternatives you considered.
+    validations:
+      required: true
+  - type: checkboxes
+    id: involvement
+    attributes:
+      label: Would you like to help?
+      options:
+        - label: I can help test or discuss this idea.
+        - label: I am interested in contributing an implementation or documentation.

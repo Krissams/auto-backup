@@ -1,0 +1,42 @@
+name: Bug report
+description: Help us reproduce and fix a problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve Auto Backup. Use disposable example files and redact private paths. Report vulnerabilities through SECURITY.md."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give a minimal example, including sample filenames and approximate sizes.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: macOS version and Mac architecture
+      placeholder: "macOS 15, Apple silicon"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or commit
+  - type: input
+    id: drives
+    attributes:
+      label: Source and destination types / filesystems
+      placeholder: "SD card (exFAT) to external SSD (APFS)"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error text or screenshots
+      description: Review attachments for private information before sharing.
